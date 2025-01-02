@@ -14,9 +14,8 @@ public partial class MainPage : ContentPage
         if (!string.IsNullOrWhiteSpace(TaskEntry.Text))
         {
             tasks.Add(TaskEntry.Text);
-            TaskEntry.Text = ""; // Clear input after adding
-            //TaskListView.ItemsSource = null; // Reset binding
-            TaskListView.ItemsSource = tasks; // Update binding
+            TaskEntry.Text = "";
+            TaskListView.ItemsSource = tasks;
         }
     }
 }
