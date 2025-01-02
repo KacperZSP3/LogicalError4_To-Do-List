@@ -1,5 +1,5 @@
 ﻿namespace ToDoListApp;
-
+//Dodawanie zadań do listy
 public partial class MainPage : ContentPage
 {
     List<string> tasks = new List<string>();
